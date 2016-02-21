@@ -89,7 +89,7 @@ app.use(function(err, req, res, next) {
   });
 });
 
-server.listen(82);
+server.listen(80);
 
 
 module.exports = app;
