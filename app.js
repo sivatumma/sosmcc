@@ -6,7 +6,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var cors = require('cors');
 
-var app = require('express')();
+var app = require('express');
 var server = require('http').Server(app);
 var io = require('socket.io')(server);
 
@@ -26,23 +26,24 @@ app.get('/', function(req, res) {
 
 io.on('connection', function(socket) {
   console.log("Client connected through 'connect' socket.io ");
-  socket.emit('data',{siva:"is thumma"});
 
   /**********************************************************************************************
    ************   SPECIAL CODE THAT FETCHES DEVICE DATA - DON'T DISTURB UNLESS YOU KNOW - BELOW */
   var server = require('net').createServer(function(deviceSocket) {
     deviceSocket.on('data', function(data) {
-      //var decodedDeviceData = new Buffer(data, 'hex').toString('utf8');
+      // var decodedDeviceData = data.toString('utf8');
       console.log("Data from client", data);
-      deviceSocket.emit('data',data /* new Buffer(data, 'hex').toString('utf8') */);
+      deviceSocket.emit('data',data);
+      // deviceSocket.emit('data', decodedDeviceData);
+
     });
   });
 
 
-  server.on('connection', function(c) {    console.log("Connected a device");  });
-  server.on('listening', function() {    console.log("Listening now");  });
-  server.on('data', function(d) {    console.log("Here is d", d);  });
-  server.on('end', function() {    console.log("This client is disconnecting, disconnected");  });
+  // server.on('connection', function(c) {    console.log("Connected a device");  });
+  // server.on('listening', function() {    console.log("Listening now");  });
+  // server.on('data', function(d) {    console.log("Here is d", d);  });
+  // server.on('end', function() {    console.log("This client is disconnecting, disconnected");  });
 
   server.listen(5062, "0.0.0.0");
 
