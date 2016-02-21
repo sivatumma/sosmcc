@@ -88,7 +88,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
 
   <google-map mouseEvents="true" additional-map-options='{"mapTypeId":"hybrid"}' map="{{map}}" latitude="17.4448706" longitude="78.3658851" zoom="13">
-    <google-map-marker latitude="17.4448706" longitude="78.3658851"
+    <google-map-marker id = "sivaSOSDevice" latitude="17.4448706" longitude="78.3658851"
         title="Hey Siva!" draggable="true"></google-map-marker>
   </google-map>
 
@@ -180,6 +180,12 @@ var socket = io.connect('http://100.72.0.15:80');
 // Add a connect listener
 socket.on('data',function(data) {
   console.log('Here is the data ',data, typeof data, data.toString());
+  if (data.startsWith("!D")){
+    var decode = data.split(",");
+    var latlong = new google.maps.LatLng(decode[3],decode[4]);
+
+    document.querySelector("sivaSOSDevice").setPosition(latlong);
+  }
 });
 
 socket.on('disconnect',function() {
