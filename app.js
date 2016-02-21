@@ -6,7 +6,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var cors = require('cors');
 
-var app = require('express');
+var app = require('express')();
 var server = require('http').Server(app);
 var io = require('socket.io')(server);
 
@@ -29,11 +29,24 @@ io.on('connection', function(socket) {
 
   /**********************************************************************************************
    ************   SPECIAL CODE THAT FETCHES DEVICE DATA - DON'T DISTURB UNLESS YOU KNOW - BELOW */
+
+
+/*
+var server = require('net').createServer(function (socket) {
+	socket.on('data',function(data){
+		console.log("Data from client",data, new Buffer(data,'hex').toString('utf8'));
+		
+	});
+});
+
+*/
+
   var server = require('net').createServer(function(deviceSocket) {
     deviceSocket.on('data', function(data) {
       // var decodedDeviceData = data.toString('utf8');
-      console.log("Data from client", data);
-      deviceSocket.emit('data',data);
+      console.log("Data from client", new Buffer(data,'hex').toString('utf8'));
+	//console.log("This is the socket.io socket ", socket);
+      socket.emit('data',{data:data});
       // deviceSocket.emit('data', decodedDeviceData);
 
     });
