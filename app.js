@@ -6,9 +6,9 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var cors = require('cors');
 
-var app = express();
+var app = require('express')();
 var server = require('http').Server(app);
-var io = require('socket.io')(80);
+var io = require('socket.io')(server);
 
 app.use(cors());
 app.use(function(req, res, next) {
@@ -24,7 +24,9 @@ app.get('/', function(req, res) {
   res.sendfile(__dirname + 'dist/index.html');
 });
 
-io.on('connect', function(socket) {
+io.on('connection', function(socket) {
+  console.log("Client connected through 'connect' socket.io ");
+  socket.emit('data',{siva:"is thumma"});
 
   /**********************************************************************************************
    ************   SPECIAL CODE THAT FETCHES DEVICE DATA - DON'T DISTURB UNLESS YOU KNOW - BELOW */
@@ -46,12 +48,6 @@ io.on('connect', function(socket) {
 
   /**************************************************************************************
    *******   SPECIAL CODE THAT FETCHES DEVICE DATA - DON'T DISTURB UNLESS YOU KNOW ABOVE */
-
-  // setInterval(function() {
-  //   socket.emit('data', {
-  //     hello: 'world'
-  //   });
-  // }, 5000);
 });
 
 // uncomment after placing your favicon in /public
@@ -93,7 +89,7 @@ app.use(function(err, req, res, next) {
   });
 });
 
-app.listen(8082);
+server.listen(82);
 
 
 module.exports = app;
