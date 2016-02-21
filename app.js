@@ -8,7 +8,7 @@ var cors = require('cors');
 
 var app = express();
 var server = require('http').Server(app);
-var io = require('socket.io')(82);
+var io = require('socket.io')(80);
 
 app.use(cors());
 app.use(function(req, res, next) {
