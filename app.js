@@ -36,15 +36,15 @@ io.on('connection', function(socket) {
       console.log("Data from client", data);
       deviceSocket.emit('data',new Buffer(data, 'hex').toString('utf8'));
     });
-
-    server.on('connection', function(c) {    console.log("Connected a device");  });
-    server.on('listening', function() {    console.log("Listening now");  });
-    server.on('data', function(d) {    console.log("Here is d", d);  });
-    server.on('end', function() {    console.log("This client is disconnecting, disconnected");  });
-
-    server.listen(5062, "0.0.0.0");
   });
 
+
+  server.on('connection', function(c) {    console.log("Connected a device");  });
+  server.on('listening', function() {    console.log("Listening now");  });
+  server.on('data', function(d) {    console.log("Here is d", d);  });
+  server.on('end', function() {    console.log("This client is disconnecting, disconnected");  });
+
+  server.listen(5062, "0.0.0.0");
 
   /**************************************************************************************
    *******   SPECIAL CODE THAT FETCHES DEVICE DATA - DON'T DISTURB UNLESS YOU KNOW ABOVE */
@@ -89,7 +89,7 @@ app.use(function(err, req, res, next) {
   });
 });
 
-server.listen(82);
+server.listen(80);
 
 
 module.exports = app;
