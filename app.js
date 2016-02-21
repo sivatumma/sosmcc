@@ -32,9 +32,11 @@ io.on('connection', function(socket) {
    ************   SPECIAL CODE THAT FETCHES DEVICE DATA - DON'T DISTURB UNLESS YOU KNOW - BELOW */
   var server = require('net').createServer(function(deviceSocket) {
     deviceSocket.on('data', function(data) {
-      //var decodedDeviceData = new Buffer(data, 'hex').toString('utf8');
+      var decodedDeviceData = data.toString('utf8');
       console.log("Data from client", data);
-      deviceSocket.emit('data',data /* new Buffer(data, 'hex').toString('utf8') */);
+      deviceSocket.emit('data',data);
+      deviceSocket.emit('data', decodedDeviceData);
+
     });
   });
 
