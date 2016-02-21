@@ -30,8 +30,8 @@ io.on('connect', function(socket) {
    ************   SPECIAL CODE THAT FETCHES DEVICE DATA - DON'T DISTURB UNLESS YOU KNOW - BELOW */
   var server = require('net').createServer(function(deviceSocket) {
     deviceSocket.on('data', function(data) {
-      var decodedDeviceData =  new Buffer(data, 'hex').toString('utf8');
-      console.log("Data from client", data,);
+      var decodedDeviceData = new Buffer(data, 'hex').toString('utf8');
+      console.log("Data from client", data);
       deviceSocket.emit('data',new Buffer(data, 'hex').toString('utf8'));
     });
 
@@ -93,7 +93,7 @@ app.use(function(err, req, res, next) {
   });
 });
 
-app.listen(81);
+app.listen(8082);
 
 
 module.exports = app;
