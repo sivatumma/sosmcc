@@ -180,11 +180,13 @@ var socket = io.connect('http://100.72.0.15:80');
 // Add a connect listener
 socket.on('data',function(data) {
   console.log('Here is the data ',data, typeof data, data.toString());
-  if (data.startsWith("!D")){
+  if (data.data.startsWith("!D")){
     var decode = data.split(",");
     var latlong = new google.maps.LatLng(decode[3],decode[4]);
 
-    document.querySelector("sivaSOSDevice").setPosition(latlong);
+    var focusMarker = document.querySelector("#sivaSOSDevice");
+    focusMarker.latitude = decode[3];
+    focusMarker.longitude = decode[4];
   }
 });
 
