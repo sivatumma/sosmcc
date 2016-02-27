@@ -162,6 +162,29 @@ socket.on('data',function(data) {
     focusMarker.longitude = decode[4];
     if(decode[7] == '1f0042'){
       alert("SOS alert at this location");
+
+      
+      var latLng = new google.maps.LatLng(decode[3],decode[4]);
+      var circleAround = new google.maps.Circle({
+        center: latLng,
+        map: map,
+        radius: 1500,          
+        fillColor: '#0000FF',
+        fillOpacity: 0.1,
+        strokeColor: "#0000FF",
+        strokeWeight: 0.8,
+        strokeOpacity: 1,
+      });
+      var direction = 3;
+      var rMin = 0.1,
+        rMax = 2000;
+      setInterval(function() {
+        var radius = circleAround.getRadius();
+        if ((radius > rMax) || (radius < rMin)) {
+          direction *= -1;
+        }
+        circleAround.setRadius(radius + direction * 8.5);
+      }, 9);
     }
   } 
 });
