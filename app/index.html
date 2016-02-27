@@ -115,34 +115,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       <paper-input label="End address" value="{{end}}"/>
     </paper-icon-item>
 
-    <paper-icon-item>
-      <paper-input label="Start address" value="{{start1}}"/>
-    </paper-icon-item>
-    <paper-icon-item>
-      <paper-input label="End address" value="{{end1}}"/>
-    </paper-icon-item>
-
-    <paper-tabs selected="0">
-      <paper-tab>
-      <paper-tab>
-        <iron-icon icon="maps:directions-bike"></iron-icon>
-        <span>Scooter</span>
-      </paper-tab>
-    </paper-tabs>
-
   </paper-card>
 
-  <iron-collapse id="footer">
-    <paper-card class="footer" elevation="4">
-      <paper-tabs selected="0">
-        <paper-tab>
-        <paper-tab>
-          <iron-icon icon="maps:directions-bike"></iron-icon>
-          <span>Scooter</span>
-        </paper-tab>
-      </paper-tabs>
-    </paper-card>
-  </iron-collapse>
 
 <script>
 console.log(HTMLImports);
@@ -180,14 +154,16 @@ var socket = io.connect('http://100.72.0.15:80');
 // Add a connect listener
 socket.on('data',function(data) {
   console.log('Here is the data ',data, typeof data, data.toString());
-  if (data.data.startsWith("!D")){
-    var decode = data.split(",");
-    var latlong = new google.maps.LatLng(decode[3],decode[4]);
 
+  var decode = data.split(",");
+  if (data.startsWith("!D")){
     var focusMarker = document.querySelector("#sivaSOSDevice");
     focusMarker.latitude = decode[3];
     focusMarker.longitude = decode[4];
-  }
+    if(decode[7] == '1f0042'){
+      alert("SOS alert at this location");
+    }
+  } 
 });
 
 socket.on('disconnect',function() {
