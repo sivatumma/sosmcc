@@ -41,6 +41,7 @@ var server = require('net').createServer(function (socket) {
 
 */
 
+  var listening = false;
   var server = require('net').createServer(function(deviceSocket) {
     deviceSocket.on('data', function(data) {
       // var decodedDeviceData = data.toString('utf8');
@@ -54,11 +55,11 @@ var server = require('net').createServer(function (socket) {
 
 
   // server.on('connection', function(c) {    console.log("Connected a device");  });
-  // server.on('listening', function() {    console.log("Listening now");  });
+  server.on('listening', function() {    listening = true;  });
   // server.on('data', function(d) {    console.log("Here is d", d);  });
   // server.on('end', function() {    console.log("This client is disconnecting, disconnected");  });
 
-  server.listen(5062, "0.0.0.0");
+  if(!listening) server.listen(5062, "0.0.0.0");
 
   /**************************************************************************************
    *******   SPECIAL CODE THAT FETCHES DEVICE DATA - DON'T DISTURB UNLESS YOU KNOW ABOVE */
