@@ -1,0 +1,700 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'install', 'libxmljs' ]
+2 info using npm@2.14.12
+3 info using node@v4.2.4
+4 verbose install initial load of /home/siva/work/sosmcc/package.json
+5 verbose installManyTop reading scoped package data from /home/siva/work/sosmcc/node_modules/body-parser/package.json
+6 verbose installManyTop reading scoped package data from /home/siva/work/sosmcc/node_modules/browser-sync/package.json
+7 verbose installManyTop reading scoped package data from /home/siva/work/sosmcc/node_modules/connect-history-api-fallback/package.json
+8 verbose installManyTop reading scoped package data from /home/siva/work/sosmcc/node_modules/cookie-parser/package.json
+9 verbose installManyTop reading scoped package data from /home/siva/work/sosmcc/node_modules/cors/package.json
+10 verbose installManyTop reading scoped package data from /home/siva/work/sosmcc/node_modules/del/package.json
+11 verbose installManyTop reading scoped package data from /home/siva/work/sosmcc/node_modules/express/package.json
+12 verbose installManyTop reading scoped package data from /home/siva/work/sosmcc/node_modules/glob-all/package.json
+13 verbose installManyTop reading scoped package data from /home/siva/work/sosmcc/node_modules/gulp/package.json
+14 verbose installManyTop reading scoped package data from /home/siva/work/sosmcc/node_modules/gulp-autoprefixer/package.json
+15 verbose installManyTop reading scoped package data from /home/siva/work/sosmcc/node_modules/gulp-cache/package.json
+16 verbose installManyTop reading scoped package data from /home/siva/work/sosmcc/node_modules/gulp-changed/package.json
+17 verbose installManyTop reading scoped package data from /home/siva/work/sosmcc/node_modules/gulp-gh-pages/package.json
+18 verbose installManyTop reading scoped package data from /home/siva/work/sosmcc/node_modules/gulp-html-extract/package.json
+19 verbose installManyTop reading scoped package data from /home/siva/work/sosmcc/node_modules/gulp-if/package.json
+20 verbose installManyTop reading scoped package data from /home/siva/work/sosmcc/node_modules/gulp-imagemin/package.json
+21 verbose installManyTop reading scoped package data from /home/siva/work/sosmcc/node_modules/gulp-load-plugins/package.json
+22 verbose installManyTop reading scoped package data from /home/siva/work/sosmcc/node_modules/gulp-minify-css/package.json
+23 verbose installManyTop reading scoped package data from /home/siva/work/sosmcc/node_modules/gulp-minify-html/package.json
+24 verbose installManyTop reading scoped package data from /home/siva/work/sosmcc/node_modules/gulp-rename/package.json
+25 verbose installManyTop reading scoped package data from /home/siva/work/sosmcc/node_modules/gulp-replace/package.json
+26 verbose installManyTop reading scoped package data from /home/siva/work/sosmcc/node_modules/gulp-size/package.json
+27 verbose installManyTop reading scoped package data from /home/siva/work/sosmcc/node_modules/gulp-uglify/package.json
+28 verbose installManyTop reading scoped package data from /home/siva/work/sosmcc/node_modules/gulp-useref/package.json
+29 verbose installManyTop reading scoped package data from /home/siva/work/sosmcc/node_modules/gulp-vulcanize/package.json
+30 verbose installManyTop reading scoped package data from /home/siva/work/sosmcc/node_modules/jade/package.json
+31 verbose installManyTop reading scoped package data from /home/siva/work/sosmcc/node_modules/merge-stream/package.json
+32 verbose installManyTop reading scoped package data from /home/siva/work/sosmcc/node_modules/morgan/package.json
+33 verbose installManyTop reading scoped package data from /home/siva/work/sosmcc/node_modules/require-dir/package.json
+34 verbose installManyTop reading scoped package data from /home/siva/work/sosmcc/node_modules/run-sequence/package.json
+35 verbose installManyTop reading scoped package data from /home/siva/work/sosmcc/node_modules/serve-favicon/package.json
+36 verbose installManyTop reading scoped package data from /home/siva/work/sosmcc/node_modules/socket.io/package.json
+37 verbose installManyTop reading scoped package data from /home/siva/work/sosmcc/node_modules/vulcanize/package.json
+38 verbose installManyTop reading scoped package data from /home/siva/work/sosmcc/node_modules/web-component-tester/package.json
+39 verbose installManyTop reading scoped package data from /home/siva/work/sosmcc/node_modules/xls-to-json/package.json
+40 info package.json gulp-rename@1.2.2 No license field.
+41 info package.json gulp-minify-css@1.2.3 No repository field.
+42 info package.json gulp-minify-html@1.0.5 No repository field.
+43 verbose readDependencies loading dependencies from /home/siva/work/sosmcc/package.json
+44 silly cache add args [ 'libxmljs', null ]
+45 verbose cache add spec libxmljs
+46 silly cache add parsed spec Result {
+46 silly cache add   raw: 'libxmljs',
+46 silly cache add   scope: null,
+46 silly cache add   name: 'libxmljs',
+46 silly cache add   rawSpec: '',
+46 silly cache add   spec: 'latest',
+46 silly cache add   type: 'tag' }
+47 silly addNamed libxmljs@latest
+48 verbose addNamed "latest" is being treated as a dist-tag for libxmljs
+49 info addNameTag [ 'libxmljs', 'latest' ]
+50 silly mapToRegistry name libxmljs
+51 silly mapToRegistry using default registry
+52 silly mapToRegistry registry https://registry.npmjs.org/
+53 silly mapToRegistry uri https://registry.npmjs.org/libxmljs
+54 verbose addNameTag registry:https://registry.npmjs.org/libxmljs not in flight; fetching
+55 verbose request uri https://registry.npmjs.org/libxmljs
+56 verbose request no auth needed
+57 info attempt registry request try #1 at 12:31:44 PM
+58 verbose request id 4ce5d2467c3b15e1
+59 verbose etag "9MDM08BYTFICSJO1KW8L6OFBQ"
+60 http request GET https://registry.npmjs.org/libxmljs
+61 http 304 https://registry.npmjs.org/libxmljs
+62 verbose headers { date: 'Sun, 28 Feb 2016 06:59:31 GMT',
+62 verbose headers   via: '1.1 varnish',
+62 verbose headers   'cache-control': 'max-age=300',
+62 verbose headers   etag: '"9MDM08BYTFICSJO1KW8L6OFBQ"',
+62 verbose headers   age: '0',
+62 verbose headers   connection: 'keep-alive',
+62 verbose headers   'x-served-by': 'cache-sin6921-SIN',
+62 verbose headers   'x-cache': 'HIT',
+62 verbose headers   'x-cache-hits': '1',
+62 verbose headers   'x-timer': 'S1456642771.571553,VS0,VE246',
+62 verbose headers   vary: 'Accept' }
+63 silly get cb [ 304,
+63 silly get   { date: 'Sun, 28 Feb 2016 06:59:31 GMT',
+63 silly get     via: '1.1 varnish',
+63 silly get     'cache-control': 'max-age=300',
+63 silly get     etag: '"9MDM08BYTFICSJO1KW8L6OFBQ"',
+63 silly get     age: '0',
+63 silly get     connection: 'keep-alive',
+63 silly get     'x-served-by': 'cache-sin6921-SIN',
+63 silly get     'x-cache': 'HIT',
+63 silly get     'x-cache-hits': '1',
+63 silly get     'x-timer': 'S1456642771.571553,VS0,VE246',
+63 silly get     vary: 'Accept' } ]
+64 verbose etag https://registry.npmjs.org/libxmljs from cache
+65 verbose get saving libxmljs to /home/siva/.npm/registry.npmjs.org/libxmljs/.cache.json
+66 silly addNameTag next cb for libxmljs with tag latest
+67 silly addNamed libxmljs@0.17.1
+68 verbose addNamed "0.17.1" is a plain semver version for libxmljs
+69 silly cache afterAdd libxmljs@0.17.1
+70 verbose afterAdd /home/siva/.npm/libxmljs/0.17.1/package/package.json not in flight; writing
+71 verbose afterAdd /home/siva/.npm/libxmljs/0.17.1/package/package.json written
+72 silly install resolved [ { name: 'libxmljs',
+72 silly install resolved     author: { name: 'Marco Rogers' },
+72 silly install resolved     contributors: [ [Object] ],
+72 silly install resolved     description: 'libxml bindings for v8 javascript engine',
+72 silly install resolved     version: '0.17.1',
+72 silly install resolved     scripts:
+72 silly install resolved      { test: 'node --expose_gc ./node_modules/.bin/nodeunit test',
+72 silly install resolved        install: 'node-gyp rebuild' },
+72 silly install resolved     repository:
+72 silly install resolved      { type: 'git',
+72 silly install resolved        url: 'git+ssh://git@github.com/polotek/libxmljs.git' },
+72 silly install resolved     bugs: { url: 'http://github.com/polotek/libxmljs/issues' },
+72 silly install resolved     main: './index',
+72 silly install resolved     license: 'MIT',
+72 silly install resolved     engines: { node: '>=0.8.0' },
+72 silly install resolved     dependencies: { bindings: '1.2.1', nan: '2.0.7' },
+72 silly install resolved     devDependencies: { nodeunit: '0.9.0' },
+72 silly install resolved     gypfile: true,
+72 silly install resolved     gitHead: '818f728d4d6a235d3eb5bbf5bb44cb034b272304',
+72 silly install resolved     homepage: 'https://github.com/polotek/libxmljs#readme',
+72 silly install resolved     _id: 'libxmljs@0.17.1',
+72 silly install resolved     _shasum: '1f77e529b5bd1c0e49936726daed95577092ee8a',
+72 silly install resolved     _from: 'libxmljs@latest',
+72 silly install resolved     _npmVersion: '3.3.12',
+72 silly install resolved     _nodeVersion: '5.4.1',
+72 silly install resolved     _npmUser: { name: 'defunctzombie', email: 'shtylman@gmail.com' },
+72 silly install resolved     dist:
+72 silly install resolved      { shasum: '1f77e529b5bd1c0e49936726daed95577092ee8a',
+72 silly install resolved        tarball: 'http://registry.npmjs.org/libxmljs/-/libxmljs-0.17.1.tgz' },
+72 silly install resolved     maintainers: [ [Object], [Object] ],
+72 silly install resolved     _npmOperationalInternal:
+72 silly install resolved      { host: 'packages-9-west.internal.npmjs.com',
+72 silly install resolved        tmp: 'tmp/libxmljs-0.17.1.tgz_1454438121859_0.9779550230596215' },
+72 silly install resolved     directories: {},
+72 silly install resolved     _resolved: 'https://registry.npmjs.org/libxmljs/-/libxmljs-0.17.1.tgz',
+72 silly install resolved     readme: 'ERROR: No README data found!' } ]
+73 info install libxmljs@0.17.1 into /home/siva/work/sosmcc
+74 info installOne libxmljs@0.17.1
+75 verbose installOne of libxmljs to /home/siva/work/sosmcc not in flight; installing
+76 verbose lock using /home/siva/.npm/_locks/libxmljs-150a3934a9009477.lock for /home/siva/work/sosmcc/node_modules/libxmljs
+77 silly install write writing libxmljs 0.17.1 to /home/siva/work/sosmcc/node_modules/libxmljs
+78 verbose unbuild node_modules/libxmljs
+79 silly gentlyRm /home/siva/work/sosmcc/node_modules/libxmljs is being purged from base /home/siva/work/sosmcc
+80 verbose gentlyRm don't care about contents; nuking /home/siva/work/sosmcc/node_modules/libxmljs
+81 verbose tar unpack /home/siva/.npm/libxmljs/0.17.1/package.tgz
+82 verbose tar unpacking to /home/siva/work/sosmcc/node_modules/libxmljs
+83 silly gentlyRm /home/siva/work/sosmcc/node_modules/libxmljs is being purged
+84 verbose gentlyRm don't care about contents; nuking /home/siva/work/sosmcc/node_modules/libxmljs
+85 silly gunzTarPerm modes [ '755', '644' ]
+86 silly gunzTarPerm extractEntry package.json
+87 silly gunzTarPerm extractEntry .npmignore
+88 silly gunzTarPerm extractEntry README.md
+89 silly gunzTarPerm extractEntry LICENSE
+90 silly gunzTarPerm extractEntry index.js
+91 silly gunzTarPerm extractEntry binding.gyp
+92 silly gunzTarPerm extractEntry .travis.yml
+93 silly gunzTarPerm extractEntry Makefile
+94 silly gunzTarPerm extractEntry lib/bindings.js
+95 silly gunzTarPerm extractEntry lib/comment.js
+96 silly gunzTarPerm extractEntry lib/document.js
+97 silly gunzTarPerm extractEntry lib/element.js
+98 silly gunzTarPerm extractEntry lib/sax_parser.js
+99 silly gunzTarPerm extractEntry lib/text.js
+100 silly gunzTarPerm extractEntry test/attribute.js
+101 silly gunzTarPerm extractEntry test/html_parser.js
+102 silly gunzTarPerm extractEntry test/main.js
+103 silly gunzTarPerm extractEntry test/memory_management.js
+104 silly gunzTarPerm extractEntry test/xml_sax_parser.js
+105 silly gunzTarPerm extractEntry test/comment.js
+106 silly gunzTarPerm extractEntry test/ref_integrity.js
+107 silly gunzTarPerm extractEntry test/searching.js
+108 silly gunzTarPerm extractEntry test/text.js
+109 silly gunzTarPerm extractEntry test/text_node.js
+110 silly gunzTarPerm extractEntry test/element.js
+111 silly gunzTarPerm extractEntry test/traversal.js
+112 silly gunzTarPerm extractEntry test/document.js
+113 silly gunzTarPerm extractEntry test/xml_parser.js
+114 silly gunzTarPerm extractEntry test/namespace.js
+115 silly gunzTarPerm extractEntry test/z_memory_leak.js
+116 silly gunzTarPerm extractEntry test/node_attributes.js
+117 silly gunzTarPerm extractEntry test/fixtures/errors/comment.xml
+118 silly gunzTarPerm extractEntry test/fixtures/parser-utf16.xml
+119 silly gunzTarPerm extractEntry test/fixtures/parser.euc_jp.html
+120 silly gunzTarPerm extractEntry test/fixtures/parser.html
+121 silly gunzTarPerm extractEntry test/fixtures/parser.xml
+122 silly gunzTarPerm extractEntry test/fixtures/sax_parser.xml
+123 silly gunzTarPerm extractEntry test/fixtures/warnings/amp.html
+124 silly gunzTarPerm extractEntry test/fixtures/warnings/ent9.xml
+125 silly gunzTarPerm extractEntry vendor/libxml/schematron.c
+126 silly gunzTarPerm extractEntry vendor/libxml/DOCBparser.c
+127 silly gunzTarPerm extractEntry vendor/libxml/HTMLtree.c
+128 silly gunzTarPerm extractEntry vendor/libxml/SAX.c
+129 silly gunzTarPerm extractEntry vendor/libxml/SAX2.c
+130 silly gunzTarPerm extractEntry vendor/libxml/buf.c
+131 silly gunzTarPerm extractEntry vendor/libxml/buf.h
+132 silly gunzTarPerm extractEntry vendor/libxml/c14n.c
+133 silly gunzTarPerm extractEntry vendor/libxml/catalog.c
+134 silly gunzTarPerm extractEntry vendor/libxml/chvalid.c
+135 silly gunzTarPerm extractEntry vendor/libxml/config.h
+136 silly gunzTarPerm extractEntry vendor/libxml/debugXML.c
+137 silly gunzTarPerm extractEntry vendor/libxml/dict.c
+138 silly gunzTarPerm extractEntry vendor/libxml/elfgcchack.h
+139 silly gunzTarPerm extractEntry vendor/libxml/enc.h
+140 silly gunzTarPerm extractEntry vendor/libxml/encoding.c
+141 silly gunzTarPerm extractEntry vendor/libxml/entities.c
+142 silly gunzTarPerm extractEntry vendor/libxml/error.c
+143 silly gunzTarPerm extractEntry vendor/libxml/globals.c
+144 silly gunzTarPerm extractEntry vendor/libxml/hash.c
+145 silly gunzTarPerm extractEntry vendor/libxml/include/libxml/schematron.h
+146 silly gunzTarPerm extractEntry vendor/libxml/include/libxml/DOCBparser.h
+147 silly gunzTarPerm extractEntry vendor/libxml/include/libxml/HTMLtree.h
+148 silly gunzTarPerm extractEntry vendor/libxml/include/libxml/Makefile
+149 silly gunzTarPerm extractEntry vendor/libxml/include/libxml/Makefile.am
+150 silly gunzTarPerm extractEntry vendor/libxml/include/libxml/Makefile.in
+151 silly gunzTarPerm extractEntry vendor/libxml/include/libxml/SAX.h
+152 silly gunzTarPerm extractEntry vendor/libxml/include/libxml/SAX2.h
+153 silly gunzTarPerm extractEntry vendor/libxml/include/libxml/c14n.h
+154 silly gunzTarPerm extractEntry vendor/libxml/include/libxml/catalog.h
+155 silly gunzTarPerm extractEntry vendor/libxml/include/libxml/chvalid.h
+156 silly gunzTarPerm extractEntry vendor/libxml/include/libxml/debugXML.h
+157 silly gunzTarPerm extractEntry vendor/libxml/include/libxml/dict.h
+158 silly gunzTarPerm extractEntry vendor/libxml/include/libxml/encoding.h
+159 silly gunzTarPerm extractEntry vendor/libxml/include/libxml/entities.h
+160 silly gunzTarPerm extractEntry vendor/libxml/include/libxml/globals.h
+161 silly gunzTarPerm extractEntry vendor/libxml/include/libxml/hash.h
+162 silly gunzTarPerm extractEntry vendor/libxml/include/libxml/list.h
+163 silly gunzTarPerm extractEntry vendor/libxml/include/libxml/nanoftp.h
+164 silly gunzTarPerm extractEntry vendor/libxml/include/libxml/nanohttp.h
+165 silly gunzTarPerm extractEntry vendor/libxml/include/libxml/parser.h
+166 silly gunzTarPerm extractEntry vendor/libxml/include/libxml/parserInternals.h
+167 silly gunzTarPerm extractEntry vendor/libxml/include/libxml/pattern.h
+168 silly gunzTarPerm extractEntry vendor/libxml/include/libxml/relaxng.h
+169 silly gunzTarPerm extractEntry vendor/libxml/include/libxml/schemasInternals.h
+170 silly gunzTarPerm extractEntry vendor/libxml/include/libxml/HTMLparser.h
+171 silly gunzTarPerm extractEntry vendor/libxml/include/libxml/threads.h
+172 silly gunzTarPerm extractEntry vendor/libxml/include/libxml/tree.h
+173 silly gunzTarPerm extractEntry vendor/libxml/include/libxml/uri.h
+174 silly gunzTarPerm extractEntry vendor/libxml/include/libxml/valid.h
+175 silly gunzTarPerm extractEntry vendor/libxml/include/libxml/xinclude.h
+176 silly gunzTarPerm extractEntry vendor/libxml/include/libxml/xlink.h
+177 silly gunzTarPerm extractEntry vendor/libxml/include/libxml/xmlIO.h
+178 silly gunzTarPerm extractEntry vendor/libxml/include/libxml/xmlautomata.h
+179 silly gunzTarPerm extractEntry vendor/libxml/include/libxml/xmlerror.h
+180 silly gunzTarPerm extractEntry vendor/libxml/include/libxml/xmlexports.h
+181 silly gunzTarPerm extractEntry vendor/libxml/include/libxml/xmlmemory.h
+182 silly gunzTarPerm extractEntry vendor/libxml/include/libxml/xmlmodule.h
+183 silly gunzTarPerm extractEntry vendor/libxml/include/libxml/xmlreader.h
+184 silly gunzTarPerm extractEntry vendor/libxml/include/libxml/xmlregexp.h
+185 silly gunzTarPerm extractEntry vendor/libxml/include/libxml/xmlsave.h
+186 silly gunzTarPerm extractEntry vendor/libxml/include/libxml/xmlschemas.h
+187 silly gunzTarPerm extractEntry vendor/libxml/include/libxml/xmlschemastypes.h
+188 silly gunzTarPerm extractEntry vendor/libxml/include/libxml/xmlstring.h
+189 silly gunzTarPerm extractEntry vendor/libxml/include/libxml/xmlunicode.h
+190 silly gunzTarPerm extractEntry vendor/libxml/include/libxml/xmlversion.h
+191 silly gunzTarPerm extractEntry vendor/libxml/include/libxml/xmlwriter.h
+192 silly gunzTarPerm extractEntry vendor/libxml/include/libxml/xpath.h
+193 silly gunzTarPerm extractEntry vendor/libxml/include/libxml/xpathInternals.h
+194 silly gunzTarPerm extractEntry vendor/libxml/include/libxml/xpointer.h
+195 silly gunzTarPerm extractEntry vendor/libxml/include/win32config.h
+196 silly gunzTarPerm extractEntry vendor/libxml/include/wsockcompat.h
+197 silly gunzTarPerm extractEntry vendor/libxml/legacy.c
+198 silly gunzTarPerm extractEntry vendor/libxml/libxml.gyp
+199 silly gunzTarPerm extractEntry vendor/libxml/libxml.h
+200 silly gunzTarPerm extractEntry vendor/libxml/list.c
+201 silly gunzTarPerm extractEntry vendor/libxml/nanoftp.c
+202 silly gunzTarPerm extractEntry vendor/libxml/nanohttp.c
+203 silly gunzTarPerm extractEntry vendor/libxml/parser.c
+204 silly gunzTarPerm extractEntry vendor/libxml/parserInternals.c
+205 silly gunzTarPerm extractEntry vendor/libxml/pattern.c
+206 silly gunzTarPerm extractEntry vendor/libxml/relaxng.c
+207 silly gunzTarPerm extractEntry vendor/libxml/runsuite.c
+208 silly gunzTarPerm extractEntry vendor/libxml/save.h
+209 silly gunzTarPerm extractEntry vendor/libxml/HTMLparser.c
+210 silly gunzTarPerm extractEntry vendor/libxml/threads.c
+211 silly gunzTarPerm extractEntry vendor/libxml/timsort.h
+212 silly gunzTarPerm extractEntry vendor/libxml/tree.c
+213 silly gunzTarPerm extractEntry vendor/libxml/trio.c
+214 silly gunzTarPerm extractEntry vendor/libxml/trio.h
+215 silly gunzTarPerm extractEntry vendor/libxml/triodef.h
+216 silly gunzTarPerm extractEntry vendor/libxml/trionan.c
+217 silly gunzTarPerm extractEntry vendor/libxml/trionan.h
+218 silly gunzTarPerm extractEntry vendor/libxml/triop.h
+219 silly gunzTarPerm extractEntry vendor/libxml/triostr.c
+220 silly gunzTarPerm extractEntry vendor/libxml/triostr.h
+221 silly gunzTarPerm extractEntry vendor/libxml/uri.c
+222 silly gunzTarPerm extractEntry vendor/libxml/valid.c
+223 silly gunzTarPerm extractEntry vendor/libxml/xinclude.c
+224 silly gunzTarPerm extractEntry vendor/libxml/xlink.c
+225 silly gunzTarPerm extractEntry vendor/libxml/xmlIO.c
+226 silly gunzTarPerm extractEntry vendor/libxml/xmlcatalog.c
+227 silly gunzTarPerm extractEntry vendor/libxml/xmllint.c
+228 silly gunzTarPerm extractEntry vendor/libxml/xmlmemory.c
+229 silly gunzTarPerm extractEntry vendor/libxml/xmlmodule.c
+230 silly gunzTarPerm extractEntry vendor/libxml/xmlreader.c
+231 silly gunzTarPerm extractEntry vendor/libxml/xmlregexp.c
+232 silly gunzTarPerm extractEntry vendor/libxml/xmlsave.c
+233 silly gunzTarPerm extractEntry vendor/libxml/xmlschemas.c
+234 silly gunzTarPerm extractEntry vendor/libxml/xmlschemastypes.c
+235 silly gunzTarPerm extractEntry vendor/libxml/xmlstring.c
+236 silly gunzTarPerm extractEntry vendor/libxml/xmlunicode.c
+237 silly gunzTarPerm extractEntry vendor/libxml/xmlwriter.c
+238 silly gunzTarPerm extractEntry vendor/libxml/xpath.c
+239 silly gunzTarPerm extractEntry vendor/libxml/xpointer.c
+240 silly gunzTarPerm extractEntry vendor/libxml/xzlib.c
+241 silly gunzTarPerm extractEntry vendor/libxml/xzlib.h
+242 silly gunzTarPerm extractEntry src/xml_namespace.cc
+243 silly gunzTarPerm extractEntry src/html_document.cc
+244 silly gunzTarPerm extractEntry src/libxmljs.cc
+245 silly gunzTarPerm extractEntry src/libxmljs.h
+246 silly gunzTarPerm extractEntry src/xml_attribute.cc
+247 silly gunzTarPerm extractEntry src/xml_attribute.h
+248 silly gunzTarPerm extractEntry src/xml_comment.cc
+249 silly gunzTarPerm extractEntry src/xml_comment.h
+250 silly gunzTarPerm extractEntry src/xml_document.cc
+251 silly gunzTarPerm extractEntry src/xml_document.h
+252 silly gunzTarPerm extractEntry src/xml_element.cc
+253 silly gunzTarPerm extractEntry src/xml_element.h
+254 silly gunzTarPerm extractEntry src/html_document.h
+255 silly gunzTarPerm extractEntry src/xml_namespace.h
+256 silly gunzTarPerm extractEntry src/xml_node.cc
+257 silly gunzTarPerm extractEntry src/xml_node.h
+258 silly gunzTarPerm extractEntry src/xml_sax_parser.cc
+259 silly gunzTarPerm extractEntry src/xml_sax_parser.h
+260 silly gunzTarPerm extractEntry src/xml_syntax_error.cc
+261 silly gunzTarPerm extractEntry src/xml_syntax_error.h
+262 silly gunzTarPerm extractEntry src/xml_text.cc
+263 silly gunzTarPerm extractEntry src/xml_text.h
+264 silly gunzTarPerm extractEntry src/xml_xpath_context.cc
+265 silly gunzTarPerm extractEntry src/xml_xpath_context.h
+266 silly gunzTarPerm extractEntry examples/cdata.js
+267 verbose write writing to /home/siva/work/sosmcc/node_modules/libxmljs/package.json
+268 info preinstall libxmljs@0.17.1
+269 verbose readDependencies loading dependencies from /home/siva/work/sosmcc/node_modules/libxmljs/package.json
+270 silly prepareForInstallMany adding bindings@1.2.1 from libxmljs dependencies
+271 silly prepareForInstallMany adding nan@2.0.7 from libxmljs dependencies
+272 verbose readDependencies loading dependencies from /home/siva/work/sosmcc/node_modules/libxmljs/package.json
+273 silly cache add args [ 'bindings@1.2.1', null ]
+274 verbose cache add spec bindings@1.2.1
+275 silly cache add args [ 'nan@2.0.7', null ]
+276 verbose cache add spec nan@2.0.7
+277 silly cache add parsed spec Result {
+277 silly cache add   raw: 'bindings@1.2.1',
+277 silly cache add   scope: null,
+277 silly cache add   name: 'bindings',
+277 silly cache add   rawSpec: '1.2.1',
+277 silly cache add   spec: '1.2.1',
+277 silly cache add   type: 'version' }
+278 silly addNamed bindings@1.2.1
+279 verbose addNamed "1.2.1" is a plain semver version for bindings
+280 silly mapToRegistry name bindings
+281 silly mapToRegistry using default registry
+282 silly mapToRegistry registry https://registry.npmjs.org/
+283 silly mapToRegistry uri https://registry.npmjs.org/bindings
+284 verbose addNameVersion registry:https://registry.npmjs.org/bindings not in flight; fetching
+285 silly cache add parsed spec Result {
+285 silly cache add   raw: 'nan@2.0.7',
+285 silly cache add   scope: null,
+285 silly cache add   name: 'nan',
+285 silly cache add   rawSpec: '2.0.7',
+285 silly cache add   spec: '2.0.7',
+285 silly cache add   type: 'version' }
+286 silly addNamed nan@2.0.7
+287 verbose addNamed "2.0.7" is a plain semver version for nan
+288 silly mapToRegistry name nan
+289 silly mapToRegistry using default registry
+290 silly mapToRegistry registry https://registry.npmjs.org/
+291 silly mapToRegistry uri https://registry.npmjs.org/nan
+292 verbose addNameVersion registry:https://registry.npmjs.org/nan not in flight; fetching
+293 verbose request uri https://registry.npmjs.org/bindings
+294 verbose request no auth needed
+295 info attempt registry request try #1 at 12:31:46 PM
+296 verbose etag "1LLBF9OH58DLBEL4629U6032D"
+297 http request GET https://registry.npmjs.org/bindings
+298 verbose request uri https://registry.npmjs.org/nan
+299 verbose request no auth needed
+300 info attempt registry request try #1 at 12:31:46 PM
+301 verbose etag "BAVERG4EG5W3XHF012VJBMBOB"
+302 http request GET https://registry.npmjs.org/nan
+303 http 304 https://registry.npmjs.org/nan
+304 verbose headers { date: 'Sun, 28 Feb 2016 06:59:33 GMT',
+304 verbose headers   via: '1.1 varnish',
+304 verbose headers   'cache-control': 'max-age=300',
+304 verbose headers   etag: '"BAVERG4EG5W3XHF012VJBMBOB"',
+304 verbose headers   age: '118',
+304 verbose headers   connection: 'keep-alive',
+304 verbose headers   'x-served-by': 'cache-sin6926-SIN',
+304 verbose headers   'x-cache': 'HIT',
+304 verbose headers   'x-cache-hits': '2',
+304 verbose headers   'x-timer': 'S1456642773.141030,VS0,VE0',
+304 verbose headers   vary: 'Accept' }
+305 silly get cb [ 304,
+305 silly get   { date: 'Sun, 28 Feb 2016 06:59:33 GMT',
+305 silly get     via: '1.1 varnish',
+305 silly get     'cache-control': 'max-age=300',
+305 silly get     etag: '"BAVERG4EG5W3XHF012VJBMBOB"',
+305 silly get     age: '118',
+305 silly get     connection: 'keep-alive',
+305 silly get     'x-served-by': 'cache-sin6926-SIN',
+305 silly get     'x-cache': 'HIT',
+305 silly get     'x-cache-hits': '2',
+305 silly get     'x-timer': 'S1456642773.141030,VS0,VE0',
+305 silly get     vary: 'Accept' } ]
+306 verbose etag https://registry.npmjs.org/nan from cache
+307 verbose get saving nan to /home/siva/.npm/registry.npmjs.org/nan/.cache.json
+308 http 304 https://registry.npmjs.org/bindings
+309 verbose headers { date: 'Sun, 28 Feb 2016 06:59:33 GMT',
+309 verbose headers   via: '1.1 varnish',
+309 verbose headers   'cache-control': 'max-age=300',
+309 verbose headers   etag: '"1LLBF9OH58DLBEL4629U6032D"',
+309 verbose headers   age: '97',
+309 verbose headers   connection: 'keep-alive',
+309 verbose headers   'x-served-by': 'cache-sin6924-SIN',
+309 verbose headers   'x-cache': 'HIT',
+309 verbose headers   'x-cache-hits': '2',
+309 verbose headers   'x-timer': 'S1456642773.142811,VS0,VE0',
+309 verbose headers   vary: 'Accept' }
+310 silly get cb [ 304,
+310 silly get   { date: 'Sun, 28 Feb 2016 06:59:33 GMT',
+310 silly get     via: '1.1 varnish',
+310 silly get     'cache-control': 'max-age=300',
+310 silly get     etag: '"1LLBF9OH58DLBEL4629U6032D"',
+310 silly get     age: '97',
+310 silly get     connection: 'keep-alive',
+310 silly get     'x-served-by': 'cache-sin6924-SIN',
+310 silly get     'x-cache': 'HIT',
+310 silly get     'x-cache-hits': '2',
+310 silly get     'x-timer': 'S1456642773.142811,VS0,VE0',
+310 silly get     vary: 'Accept' } ]
+311 verbose etag https://registry.npmjs.org/bindings from cache
+312 verbose get saving bindings to /home/siva/.npm/registry.npmjs.org/bindings/.cache.json
+313 silly cache afterAdd nan@2.0.7
+314 verbose afterAdd /home/siva/.npm/nan/2.0.7/package/package.json not in flight; writing
+315 silly cache afterAdd bindings@1.2.1
+316 verbose afterAdd /home/siva/.npm/bindings/1.2.1/package/package.json not in flight; writing
+317 verbose afterAdd /home/siva/.npm/nan/2.0.7/package/package.json written
+318 verbose afterAdd /home/siva/.npm/bindings/1.2.1/package/package.json written
+319 silly install resolved [ { name: 'nan',
+319 silly install resolved     version: '2.0.7',
+319 silly install resolved     description: 'Native Abstractions for Node.js: C++ header for Node 0.8->0.12 compatibility',
+319 silly install resolved     main: 'include_dirs.js',
+319 silly install resolved     repository: { type: 'git', url: 'git://github.com/nodejs/nan.git' },
+319 silly install resolved     scripts:
+319 silly install resolved      { test: 'tap --gc test/js/*-test.js',
+319 silly install resolved        'rebuild-tests': 'pangyp rebuild --msvs_version=2013 --directory test',
+319 silly install resolved        docs: 'doc/.build.sh' },
+319 silly install resolved     contributors:
+319 silly install resolved      [ [Object],
+319 silly install resolved        [Object],
+319 silly install resolved        [Object],
+319 silly install resolved        [Object],
+319 silly install resolved        [Object],
+319 silly install resolved        [Object],
+319 silly install resolved        [Object] ],
+319 silly install resolved     devDependencies:
+319 silly install resolved      { bindings: '~1.2.1',
+319 silly install resolved        commander: '^2.8.1',
+319 silly install resolved        glob: '^5.0.14',
+319 silly install resolved        'node-gyp': '~2.0.2',
+319 silly install resolved        pangyp: '~2.2.0',
+319 silly install resolved        tap: '~0.7.1',
+319 silly install resolved        xtend: '~4.0.0' },
+319 silly install resolved     license: 'MIT',
+319 silly install resolved     gitHead: 'c68f4bee08ceca279f264903f2b91b54e6e5e168',
+319 silly install resolved     bugs: { url: 'https://github.com/nodejs/nan/issues' },
+319 silly install resolved     homepage: 'https://github.com/nodejs/nan#readme',
+319 silly install resolved     _id: 'nan@2.0.7',
+319 silly install resolved     _shasum: 'c726ce45dbd863b46234e4dfe5bf02d0cb309cd8',
+319 silly install resolved     _from: 'nan@2.0.7',
+319 silly install resolved     _npmVersion: '2.13.3',
+319 silly install resolved     _nodeVersion: '3.0.0',
+319 silly install resolved     _npmUser: { name: 'kkoopa', email: 'bbyholm@abo.fi' },
+319 silly install resolved     maintainers: [ [Object], [Object] ],
+319 silly install resolved     dist:
+319 silly install resolved      { shasum: 'c726ce45dbd863b46234e4dfe5bf02d0cb309cd8',
+319 silly install resolved        tarball: 'http://registry.npmjs.org/nan/-/nan-2.0.7.tgz' },
+319 silly install resolved     directories: {},
+319 silly install resolved     _resolved: 'https://registry.npmjs.org/nan/-/nan-2.0.7.tgz',
+319 silly install resolved     readme: 'ERROR: No README data found!' },
+319 silly install resolved   { name: 'bindings',
+319 silly install resolved     description: 'Helper module for loading your native module\'s .node file',
+319 silly install resolved     keywords: [ 'native', 'addon', 'bindings', 'gyp', 'waf', 'c', 'c++' ],
+319 silly install resolved     version: '1.2.1',
+319 silly install resolved     author:
+319 silly install resolved      { name: 'Nathan Rajlich',
+319 silly install resolved        email: 'nathan@tootallnate.net',
+319 silly install resolved        url: 'http://tootallnate.net' },
+319 silly install resolved     repository:
+319 silly install resolved      { type: 'git',
+319 silly install resolved        url: 'git://github.com/TooTallNate/node-bindings.git' },
+319 silly install resolved     main: './bindings.js',
+319 silly install resolved     bugs: { url: 'https://github.com/TooTallNate/node-bindings/issues' },
+319 silly install resolved     homepage: 'https://github.com/TooTallNate/node-bindings',
+319 silly install resolved     license: 'MIT',
+319 silly install resolved     gitHead: 'e404152ee27f8478ccbc7122ee051246e8e5ec02',
+319 silly install resolved     _id: 'bindings@1.2.1',
+319 silly install resolved     scripts: {},
+319 silly install resolved     _shasum: '14ad6113812d2d37d72e67b4cacb4bb726505f11',
+319 silly install resolved     _from: 'bindings@1.2.1',
+319 silly install resolved     _npmVersion: '1.4.14',
+319 silly install resolved     _npmUser: { name: 'tootallnate', email: 'nathan@tootallnate.net' },
+319 silly install resolved     maintainers: [ [Object], [Object] ],
+319 silly install resolved     dist:
+319 silly install resolved      { shasum: '14ad6113812d2d37d72e67b4cacb4bb726505f11',
+319 silly install resolved        tarball: 'http://registry.npmjs.org/bindings/-/bindings-1.2.1.tgz' },
+319 silly install resolved     directories: {},
+319 silly install resolved     _resolved: 'https://registry.npmjs.org/bindings/-/bindings-1.2.1.tgz',
+319 silly install resolved     readme: 'ERROR: No README data found!' } ]
+320 info install nan@2.0.7 into /home/siva/work/sosmcc/node_modules/libxmljs
+321 info install bindings@1.2.1 into /home/siva/work/sosmcc/node_modules/libxmljs
+322 info installOne nan@2.0.7
+323 verbose installOne of nan to /home/siva/work/sosmcc/node_modules/libxmljs not in flight; installing
+324 info installOne bindings@1.2.1
+325 verbose installOne of bindings to /home/siva/work/sosmcc/node_modules/libxmljs not in flight; installing
+326 verbose lock using /home/siva/.npm/_locks/nan-da1cd58b3e7931ac.lock for /home/siva/work/sosmcc/node_modules/libxmljs/node_modules/nan
+327 verbose lock using /home/siva/.npm/_locks/bindings-5344d54b8daf20db.lock for /home/siva/work/sosmcc/node_modules/libxmljs/node_modules/bindings
+328 silly install write writing nan 2.0.7 to /home/siva/work/sosmcc/node_modules/libxmljs/node_modules/nan
+329 silly install write writing bindings 1.2.1 to /home/siva/work/sosmcc/node_modules/libxmljs/node_modules/bindings
+330 verbose unbuild node_modules/libxmljs/node_modules/nan
+331 verbose unbuild node_modules/libxmljs/node_modules/bindings
+332 silly gentlyRm /home/siva/work/sosmcc/node_modules/libxmljs/node_modules/nan is being purged from base /home/siva/work/sosmcc
+333 verbose gentlyRm don't care about contents; nuking /home/siva/work/sosmcc/node_modules/libxmljs/node_modules/nan
+334 silly gentlyRm /home/siva/work/sosmcc/node_modules/libxmljs/node_modules/bindings is being purged from base /home/siva/work/sosmcc
+335 verbose gentlyRm don't care about contents; nuking /home/siva/work/sosmcc/node_modules/libxmljs/node_modules/bindings
+336 verbose tar unpack /home/siva/.npm/nan/2.0.7/package.tgz
+337 verbose tar unpacking to /home/siva/work/sosmcc/node_modules/libxmljs/node_modules/nan
+338 silly gentlyRm /home/siva/work/sosmcc/node_modules/libxmljs/node_modules/nan is being purged
+339 verbose gentlyRm don't care about contents; nuking /home/siva/work/sosmcc/node_modules/libxmljs/node_modules/nan
+340 verbose tar unpack /home/siva/.npm/bindings/1.2.1/package.tgz
+341 verbose tar unpacking to /home/siva/work/sosmcc/node_modules/libxmljs/node_modules/bindings
+342 silly gentlyRm /home/siva/work/sosmcc/node_modules/libxmljs/node_modules/bindings is being purged
+343 verbose gentlyRm don't care about contents; nuking /home/siva/work/sosmcc/node_modules/libxmljs/node_modules/bindings
+344 silly gunzTarPerm modes [ '755', '644' ]
+345 silly gunzTarPerm modes [ '755', '644' ]
+346 silly gunzTarPerm extractEntry package.json
+347 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+348 silly gunzTarPerm extractEntry package.json
+349 silly gunzTarPerm extractEntry README.md
+350 silly gunzTarPerm modified mode [ 'README.md', 436, 420 ]
+351 silly gunzTarPerm extractEntry include_dirs.js
+352 silly gunzTarPerm modified mode [ 'include_dirs.js', 436, 420 ]
+353 silly gunzTarPerm extractEntry README.md
+354 silly gunzTarPerm extractEntry bindings.js
+355 silly gunzTarPerm extractEntry nan_converters.h
+356 silly gunzTarPerm modified mode [ 'nan_converters.h', 436, 420 ]
+357 silly gunzTarPerm extractEntry LICENSE.md
+358 silly gunzTarPerm modified mode [ 'LICENSE.md', 436, 420 ]
+359 silly gunzTarPerm extractEntry .dntrc
+360 silly gunzTarPerm modified mode [ '.dntrc', 436, 420 ]
+361 silly gunzTarPerm extractEntry appveyor.yml
+362 silly gunzTarPerm modified mode [ 'appveyor.yml', 436, 420 ]
+363 silly gunzTarPerm extractEntry doc/new.md
+364 silly gunzTarPerm modified mode [ 'doc/new.md', 436, 420 ]
+365 silly gunzTarPerm extractEntry doc/.build.sh
+366 silly gunzTarPerm modified mode [ 'doc/.build.sh', 509, 493 ]
+367 silly gunzTarPerm extractEntry doc/buffers.md
+368 silly gunzTarPerm modified mode [ 'doc/buffers.md', 436, 420 ]
+369 silly gunzTarPerm extractEntry doc/callback.md
+370 silly gunzTarPerm modified mode [ 'doc/callback.md', 436, 420 ]
+371 verbose write writing to /home/siva/work/sosmcc/node_modules/libxmljs/node_modules/bindings/package.json
+372 silly gunzTarPerm extractEntry doc/converters.md
+373 silly gunzTarPerm modified mode [ 'doc/converters.md', 436, 420 ]
+374 silly gunzTarPerm extractEntry doc/errors.md
+375 silly gunzTarPerm modified mode [ 'doc/errors.md', 436, 420 ]
+376 info preinstall bindings@1.2.1
+377 verbose readDependencies loading dependencies from /home/siva/work/sosmcc/node_modules/libxmljs/node_modules/bindings/package.json
+378 silly gunzTarPerm extractEntry doc/maybe_types.md
+379 silly gunzTarPerm modified mode [ 'doc/maybe_types.md', 436, 420 ]
+380 silly gunzTarPerm extractEntry doc/methods.md
+381 silly gunzTarPerm modified mode [ 'doc/methods.md', 436, 420 ]
+382 verbose readDependencies loading dependencies from /home/siva/work/sosmcc/node_modules/libxmljs/node_modules/bindings/package.json
+383 silly install resolved []
+384 verbose about to build /home/siva/work/sosmcc/node_modules/libxmljs/node_modules/bindings
+385 info build /home/siva/work/sosmcc/node_modules/libxmljs/node_modules/bindings
+386 silly gunzTarPerm extractEntry doc/asyncworker.md
+387 silly gunzTarPerm modified mode [ 'doc/asyncworker.md', 436, 420 ]
+388 silly gunzTarPerm extractEntry doc/node_misc.md
+389 silly gunzTarPerm modified mode [ 'doc/node_misc.md', 436, 420 ]
+390 info linkStuff bindings@1.2.1
+391 silly linkStuff bindings@1.2.1 has /home/siva/work/sosmcc/node_modules/libxmljs/node_modules as its parent node_modules
+392 silly gunzTarPerm extractEntry doc/persistent.md
+393 silly gunzTarPerm modified mode [ 'doc/persistent.md', 436, 420 ]
+394 silly gunzTarPerm extractEntry doc/scopes.md
+395 silly gunzTarPerm modified mode [ 'doc/scopes.md', 436, 420 ]
+396 verbose linkBins bindings@1.2.1
+397 verbose linkMans bindings@1.2.1
+398 verbose rebuildBundles bindings@1.2.1
+399 info install bindings@1.2.1
+400 silly gunzTarPerm extractEntry doc/script.md
+401 silly gunzTarPerm modified mode [ 'doc/script.md', 436, 420 ]
+402 silly gunzTarPerm extractEntry doc/string_bytes.md
+403 silly gunzTarPerm modified mode [ 'doc/string_bytes.md', 436, 420 ]
+404 info postinstall bindings@1.2.1
+405 verbose unlock done using /home/siva/.npm/_locks/bindings-5344d54b8daf20db.lock for /home/siva/work/sosmcc/node_modules/libxmljs/node_modules/bindings
+406 silly gunzTarPerm extractEntry doc/v8_internals.md
+407 silly gunzTarPerm modified mode [ 'doc/v8_internals.md', 436, 420 ]
+408 silly gunzTarPerm extractEntry doc/v8_misc.md
+409 silly gunzTarPerm modified mode [ 'doc/v8_misc.md', 436, 420 ]
+410 silly gunzTarPerm extractEntry nan.h
+411 silly gunzTarPerm modified mode [ 'nan.h', 436, 420 ]
+412 silly gunzTarPerm extractEntry nan_callbacks.h
+413 silly gunzTarPerm modified mode [ 'nan_callbacks.h', 436, 420 ]
+414 silly gunzTarPerm extractEntry nan_callbacks_12_inl.h
+415 silly gunzTarPerm modified mode [ 'nan_callbacks_12_inl.h', 436, 420 ]
+416 silly gunzTarPerm extractEntry nan_callbacks_pre_12_inl.h
+417 silly gunzTarPerm modified mode [ 'nan_callbacks_pre_12_inl.h', 436, 420 ]
+418 silly gunzTarPerm extractEntry nan_converters_43_inl.h
+419 silly gunzTarPerm modified mode [ 'nan_converters_43_inl.h', 436, 420 ]
+420 silly gunzTarPerm extractEntry nan_converters_pre_43_inl.h
+421 silly gunzTarPerm modified mode [ 'nan_converters_pre_43_inl.h', 436, 420 ]
+422 silly gunzTarPerm extractEntry nan_implementation_12_inl.h
+423 silly gunzTarPerm modified mode [ 'nan_implementation_12_inl.h', 436, 420 ]
+424 silly gunzTarPerm extractEntry nan_implementation_pre_12_inl.h
+425 silly gunzTarPerm modified mode [ 'nan_implementation_pre_12_inl.h', 436, 420 ]
+426 silly gunzTarPerm extractEntry nan_maybe_43_inl.h
+427 silly gunzTarPerm modified mode [ 'nan_maybe_43_inl.h', 436, 420 ]
+428 silly gunzTarPerm extractEntry nan_maybe_pre_43_inl.h
+429 silly gunzTarPerm modified mode [ 'nan_maybe_pre_43_inl.h', 436, 420 ]
+430 silly gunzTarPerm extractEntry nan_new.h
+431 silly gunzTarPerm modified mode [ 'nan_new.h', 436, 420 ]
+432 silly gunzTarPerm extractEntry nan_object_wrap.h
+433 silly gunzTarPerm modified mode [ 'nan_object_wrap.h', 436, 420 ]
+434 silly gunzTarPerm extractEntry nan_persistent_12_inl.h
+435 silly gunzTarPerm modified mode [ 'nan_persistent_12_inl.h', 436, 420 ]
+436 silly gunzTarPerm extractEntry nan_persistent_pre_12_inl.h
+437 silly gunzTarPerm modified mode [ 'nan_persistent_pre_12_inl.h', 436, 420 ]
+438 silly gunzTarPerm extractEntry nan_string_bytes.h
+439 silly gunzTarPerm modified mode [ 'nan_string_bytes.h', 436, 420 ]
+440 silly gunzTarPerm extractEntry nan_weak.h
+441 silly gunzTarPerm modified mode [ 'nan_weak.h', 436, 420 ]
+442 silly gunzTarPerm extractEntry CHANGELOG.md
+443 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 436, 420 ]
+444 silly gunzTarPerm extractEntry tools/package.json
+445 silly gunzTarPerm modified mode [ 'tools/package.json', 436, 420 ]
+446 silly gunzTarPerm extractEntry tools/README.md
+447 silly gunzTarPerm modified mode [ 'tools/README.md', 436, 420 ]
+448 silly gunzTarPerm extractEntry tools/1to2.js
+449 silly gunzTarPerm modified mode [ 'tools/1to2.js', 509, 493 ]
+450 verbose write writing to /home/siva/work/sosmcc/node_modules/libxmljs/node_modules/nan/package.json
+451 info preinstall nan@2.0.7
+452 verbose readDependencies loading dependencies from /home/siva/work/sosmcc/node_modules/libxmljs/node_modules/nan/package.json
+453 verbose readDependencies loading dependencies from /home/siva/work/sosmcc/node_modules/libxmljs/node_modules/nan/package.json
+454 silly install resolved []
+455 verbose about to build /home/siva/work/sosmcc/node_modules/libxmljs/node_modules/nan
+456 info build /home/siva/work/sosmcc/node_modules/libxmljs/node_modules/nan
+457 info linkStuff nan@2.0.7
+458 silly linkStuff nan@2.0.7 has /home/siva/work/sosmcc/node_modules/libxmljs/node_modules as its parent node_modules
+459 verbose linkBins nan@2.0.7
+460 verbose linkMans nan@2.0.7
+461 verbose rebuildBundles nan@2.0.7
+462 info install nan@2.0.7
+463 info postinstall nan@2.0.7
+464 verbose unlock done using /home/siva/.npm/_locks/nan-da1cd58b3e7931ac.lock for /home/siva/work/sosmcc/node_modules/libxmljs/node_modules/nan
+465 verbose about to build /home/siva/work/sosmcc/node_modules/libxmljs
+466 info build /home/siva/work/sosmcc/node_modules/libxmljs
+467 info linkStuff libxmljs@0.17.1
+468 silly linkStuff libxmljs@0.17.1 has /home/siva/work/sosmcc/node_modules as its parent node_modules
+469 verbose linkBins libxmljs@0.17.1
+470 verbose linkMans libxmljs@0.17.1
+471 verbose rebuildBundles libxmljs@0.17.1
+472 verbose rebuildBundles [ 'bindings', 'nan' ]
+473 info install libxmljs@0.17.1
+474 verbose unsafe-perm in lifecycle false
+475 info libxmljs@0.17.1 Failed to exec install script
+476 verbose unlock done using /home/siva/.npm/_locks/libxmljs-150a3934a9009477.lock for /home/siva/work/sosmcc/node_modules/libxmljs
+477 verbose stack Error: libxmljs@0.17.1 install: `node-gyp rebuild`
+477 verbose stack Exit status 1
+477 verbose stack     at EventEmitter.<anonymous> (/usr/lib/node_modules/npm/lib/utils/lifecycle.js:214:16)
+477 verbose stack     at emitTwo (events.js:87:13)
+477 verbose stack     at EventEmitter.emit (events.js:172:7)
+477 verbose stack     at ChildProcess.<anonymous> (/usr/lib/node_modules/npm/lib/utils/spawn.js:24:14)
+477 verbose stack     at emitTwo (events.js:87:13)
+477 verbose stack     at ChildProcess.emit (events.js:172:7)
+477 verbose stack     at maybeClose (internal/child_process.js:818:16)
+477 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
+478 verbose pkgid libxmljs@0.17.1
+479 verbose cwd /home/siva/work/sosmcc
+480 error Linux 3.5.0-60-generic
+481 error argv "/usr/bin/nodejs" "/usr/bin/npm" "install" "libxmljs"
+482 error node v4.2.4
+483 error npm  v2.14.12
+484 error code ELIFECYCLE
+485 error libxmljs@0.17.1 install: `node-gyp rebuild`
+485 error Exit status 1
+486 error Failed at the libxmljs@0.17.1 install script 'node-gyp rebuild'.
+486 error This is most likely a problem with the libxmljs package,
+486 error not with npm itself.
+486 error Tell the author that this fails on your system:
+486 error     node-gyp rebuild
+486 error You can get their info via:
+486 error     npm owner ls libxmljs
+486 error There is likely additional logging output above.
+487 verbose exit [ 1, true ]
+488 verbose unbuild node_modules/libxmljs
+489 info preuninstall libxmljs@0.17.1
+490 info uninstall libxmljs@0.17.1
+491 verbose unbuild rmStuff libxmljs@0.17.1 from /home/siva/work/sosmcc/node_modules
+492 info postuninstall libxmljs@0.17.1
+493 silly gentlyRm /home/siva/work/sosmcc/node_modules/libxmljs is being purged from base /home/siva/work/sosmcc
+494 verbose gentlyRm don't care about contents; nuking /home/siva/work/sosmcc/node_modules/libxmljs
+495 silly vacuum-fs purging /home/siva/work/sosmcc/node_modules/libxmljs
+496 silly vacuum-fs quitting because other entries in /home/siva/work/sosmcc/node_modules
