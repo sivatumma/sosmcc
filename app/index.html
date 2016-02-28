@@ -81,8 +81,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
   <google-map mouseEvents="true" additional-map-options='{"mapTypeId":"hybrid"}' map="{{map}}" latitude="17.4448706" longitude="78.3658851" zoom="13">
     <template is="dom-repeat" items="{{sos_devices}}">
-    <google-map-marker id = "sivaSOSDevice" latitude="17.4448706" longitude="78.33221"
+    <google-map-marker class="sivaSOSDevice" latitude="17.4448706" longitude="78.33221"
         title="Hey Siva!" draggable="true">
+        <h1>Siva</h1>
     </google-map-marker>
     </template>
 
@@ -1102,7 +1103,7 @@ socket.on('data',function(data) {
   data = data + "";
   var decode = data.split(",");
   if (data.startsWith("!D")){
-    var focusMarker = document.querySelector("#sivaSOSDevice");
+    var focusMarker = document.querySelector(".sivaSOSDevice");
     focusMarker.latitude = decode[3];
     focusMarker.longitude = decode[4];
     if(decode[7] == '1f0042'){
