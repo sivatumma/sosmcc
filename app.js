@@ -26,6 +26,8 @@ app.get('/', function(req, res) {
 
 var listening = false;
 var server = require('net').createServer(function(deviceSocket) {
+
+	deviceSocket.on('connection', function(c) {    console.log("Connected a device",c);  });
 	deviceSocket.on('data', function(data) {
 		var decodedDeviceData = new Buffer(data, 'hex').toString('utf8');
 		if(decodedDeviceData.startsWith('!1')){
@@ -36,7 +38,7 @@ var server = require('net').createServer(function(deviceSocket) {
 	});
 });
 
-server.on('connection', function(c) {    console.log("Connected a device",c);  });
+
 server.on('listening', function() {
 	console.log("Listening");
 	listening = true;
