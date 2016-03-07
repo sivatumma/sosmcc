@@ -38,6 +38,7 @@ var server = require('net').createServer(function(deviceSocket) {
 
 server.on('connection', function(c) {    console.log("Connected a device",c);  });
 server.on('listening', function() {
+	console.log("Listening");
 	listening = true;
 });
 // server.on('data', function(d) {    console.log("Here is d", d);  });
