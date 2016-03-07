@@ -31,7 +31,7 @@ var server = require('net').createServer(function(deviceSocket) {
 	deviceSocket.on('data', function(data) {
 		var decodedDeviceData = new Buffer(data, 'hex').toString('utf8');
 		if(decodedDeviceData.startsWith('!1')){
-			//	Implies first connection
+			console.log("This looks like first connection, Capture IMEI and bind to this connection");
 		}
 		console.log("Data from client", decodedDeviceData);
 		doPost(decodedDeviceData);
@@ -43,15 +43,9 @@ server.on('listening', function() {
 	console.log("Listening");
 	listening = true;
 });
-// server.on('data', function(d) {    console.log("Here is d", d);  });
-// server.on('end', function() {    console.log("This client is disconnecting, disconnected");  });
 
 if (!listening) server.listen(5062, "0.0.0.0");
 
-/**************************************************************************************
- *******   SPECIAL CODE THAT FETCHES DEVICE DATA - DON'T DISTURB UNLESS YOU KNOW ABOVE */
-
-// uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(logger('dev'));
 app.use(bodyParser.json());
@@ -66,10 +60,6 @@ app.use(function(req, res, next) {
 	next(err);
 });
 
-
-// error handlers
-
-// development error handler
 function doPost(data) {
 	var http = require("http");
 	var options = {
@@ -119,9 +109,6 @@ if (app.get('env') === 'development') {
 		});
 	});
 }
-
-// production error handler
-// no stacktraces leaked to user
 app.use(function(err, req, res, next) {
 	res.status(err.status || 500);
 	res.render('error', {
@@ -129,8 +116,5 @@ app.use(function(err, req, res, next) {
 		error: {}
 	});
 });
-
-server.listen(80);
-
 
 module.exports = app;
