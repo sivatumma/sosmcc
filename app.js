@@ -44,10 +44,11 @@ var server = require('net').createServer(function (socket) {
   var listening = false;
   var server = require('net').createServer(function(deviceSocket) {
     deviceSocket.on('data', function(data) {
-      // var decodedDeviceData = data.toString('utf8');
-      console.log("Data from client", new Buffer(data,'hex').toString('utf8'));
+      var decodedDeviceData = new Buffer(data,'hex').toString('utf8');
+      console.log("Data from client", decodedDeviceData);
+	doPost(decodedDeviceData);
 	//console.log("This is the socket.io socket ", socket);
-      socket.emit('data',{data:data});
+      //socket.emit('data',{data:data});
       // deviceSocket.emit('data', decodedDeviceData);
 
     });
@@ -80,10 +81,50 @@ app.use(function(req, res, next) {
   next(err);
 });
 
+
 // error handlers
 
 // development error handler
-// will print stacktrace
+function doPost(data) {
+	var http = require("http");
+	var options = {
+		hostname: '192.168.137.3',
+		port: 80,
+		path: '/Service/device_post.php',
+		method: 'POST',
+		headers: {
+			'Content-Type': 'application/json',
+		}
+	};
+	var req = http.request(options, function(res) {
+		console.log('Status: ' + res.statusCode);
+		console.log('Headers: ' + JSON.stringify(res.headers));
+		res.setEncoding('utf8');
+		res.on('data', function(body) {
+			console.log('Body: ' + body);
+		});
+	});
+	req.on('error', function(e) {
+		console.log('problem with request: ' + e.message);
+	});
+
+	var decode = data.split(",");
+
+	var postData = {
+		user: "SOS_Device",
+		latitude: decode[3],
+		longitide: decode[4],
+		update_time: new Date(),
+		locationmethod: "SOS_Device",
+		sessionid: "",
+		accuracy: "",
+		eventtype: "Normal",
+		extrainfo: "Normal Location"
+	};
+
+	req.write(JSON.stringify(postData));
+	req.end();
+}// will print stacktrace
 if (app.get('env') === 'development') {
   app.use(function(err, req, res, next) {
     res.status(err.status || 500);
@@ -104,7 +145,7 @@ app.use(function(err, req, res, next) {
   });
 });
 
-server.listen(81);
+server.listen(80);
 
 
 module.exports = app;
