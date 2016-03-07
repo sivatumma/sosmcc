@@ -32,9 +32,9 @@ var server = require('net').createServer(function(deviceSocket) {
 		var decodedDeviceData = new Buffer(data, 'hex').toString('utf8');
 		if(decodedDeviceData.startsWith('!1')){
 			console.log("This looks like first connection, Capture IMEI and bind to this connection");
-			console.log(this,deviceSocket);
+			this.uniqueIMEI = decodedDeviceData.split(',')[1];
 		}
-		console.log("Data from client", decodedDeviceData);
+		console.log("Data from client : (From IMEI - ", this.uniqueIMEI + "), " decodedDeviceData);
 		doPost(decodedDeviceData);
 	});
 });
