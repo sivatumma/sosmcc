@@ -32,7 +32,7 @@ var server = require('net').createServer(function(deviceSocket) {
 		var decodedDeviceData = new Buffer(data, 'hex').toString('utf8');
 		if(decodedDeviceData.startsWith('!1')){
 			console.log("This looks like first connection, Capture IMEI and bind to this connection");
-			this.uniqueIMEI = decodedDeviceData.split(',')[1];
+			this.uniqueIMEI = decodedDeviceData.split(',')[1].split(';')[0];
 		}
 		doPost(decodedDeviceData, this.uniqueIMEI);
 	});
@@ -97,6 +97,7 @@ function doPost(data,imei) {
 		extrainfo: "Normal Location"
 	};
 
+	console.log("Going to hit with the following postData : ", postData);
 	req.write(JSON.stringify(postData));
 	req.end();
 } // will print stacktrace
