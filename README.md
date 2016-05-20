@@ -1,2 +1,2 @@
-![](app/gubloos.jpg)
+![](app/gubloos.png)
 ## SOS Device Interpreter Server - Callhealth Proprietory
