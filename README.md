@@ -9,8 +9,9 @@ This module is a middleware between MCC Officers tracker and the SOS devices. MC
 
 ```Local IP: 100.72.0.15
 External IP: 104.211.231.211
-Port: 5062
-```
+Port: 5062```
+
+
 **Important**
 The public IP is accessible over internet - This is required for Devices installed with SIM cards to contact our server to ping any information. Make sure this public IP is static, otherwise whenever the IP is changed, the IP must be configured in all devices. ( That is a manual process of sending a set of SMSes to each device and confirm the settings are configured. That is a lot of work.)
 
