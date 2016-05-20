@@ -29,4 +29,4 @@ That said, this module is JUST the interface between all SOS devices in public c
 
 
 ### Bird View of Application
-![](./app/sos-birdview.png)
+![](app/sos-birdview.png)
