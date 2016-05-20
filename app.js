@@ -41,39 +41,97 @@ var server = require('net').createServer(function(deviceSocket) {
     });
     server.listen(5062, "0.0.0.0");
 });
-// uncomment after placing your favicon in /public
+
+var listening = false;
+var server = require('net').createServer(function(deviceSocket) {
+
+	deviceSocket.on('connection', function(c) {    console.log("Connected a device",c);  });
+	deviceSocket.on('data', function(data) {
+		var decodedDeviceData = new Buffer(data, 'hex').toString('utf8');
+		if(decodedDeviceData.startsWith('!1')){
+			console.log("This looks like first connection, Capture IMEI and bind to this connection");
+			this.uniqueIMEI = decodedDeviceData.split(',')[1].split(';')[0];
+		}
+		doPost(decodedDeviceData, this.uniqueIMEI);
+	});
+});
+
+
+server.on('listening', function() {
+	console.log("Listening");
+	listening = true;
+});
+
+if (!listening) server.listen(5062, "0.0.0.0");
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
-    extended: false
+	extended: false
 }));
 app.use(cookieParser());
 app.use(function(req, res, next) {
-    var err = new Error('Not Found');
-    err.status = 404;
-    next(err);
+	var err = new Error('Not Found');
+	err.status = 404;
+	next(err);
 });
-// error handlers
-// development error handler
-// will print stacktrace
+
+function doPost(data,imei) {
+	var http = require("http");
+	var options = {
+		hostname: '192.168.137.3',
+		port: 80,
+		path: '/Service/device_post.php',
+		method: 'POST',
+		headers: {
+			'Content-Type': 'application/json',
+		}
+	};
+	var req = http.request(options, function(res) {
+		console.log('Status: ' + res.statusCode);
+		console.log('Headers: ' + JSON.stringify(res.headers));
+		res.setEncoding('utf8');
+		res.on('data', function(body) {
+			console.log('Body: ' + body);
+		});
+	});
+	req.on('error', function(e) {
+		console.log('problem with request: ' + e.message);
+	});
+
+	var decode = data.split(",");
+
+	var postData = {
+		user: imei,
+		latitude: decode[3],
+		longitide: decode[4],
+		update_time: new Date(),
+		locationmethod: "SOS_Device",
+		sessionid: "",
+		accuracy: "",
+		eventtype: "Normal",
+		extrainfo: "Normal Location"
+	};
+
+	console.log("Going to hit with the following postData : ", postData);
+	req.write(JSON.stringify(postData));
+	req.end();
+} // will print stacktrace
 if (app.get('env') === 'development') {
-    app.use(function(err, req, res, next) {
-        res.status(err.status || 500);
-        res.render('error', {
-            message: err.message,
-            error: err
-        });
-    });
+	app.use(function(err, req, res, next) {
+		res.status(err.status || 500);
+		res.render('error', {
+			message: err.message,
+			error: err
+		});
+	});
 }
-// production error handler
-// no stacktraces leaked to user
 app.use(function(err, req, res, next) {
-    res.status(err.status || 500);
-    res.render('error', {
-        message: err.message,
-        error: {}
-    });
+	res.status(err.status || 500);
+	res.render('error', {
+		message: err.message,
+		error: {}
+	});
 });
-app.listen(81);
+
 module.exports = app;
