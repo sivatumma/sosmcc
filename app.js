@@ -52,6 +52,7 @@ var server = require('net').createServer(function(deviceSocket) {
 			console.log("This looks like first connection, Capture IMEI and bind to this connection");
 			this.uniqueIMEI = decodedDeviceData.split(',')[1].split(';')[0];
 		}
+
 		doPost(decodedDeviceData, this.uniqueIMEI);
 	});
 });
@@ -77,6 +78,14 @@ app.use(function(req, res, next) {
 });
 
 function doPost(data,imei) {
+	var fs = require('fs'),
+	path = require('path'),
+	certFile = path.resolve(__dirname, 'ssl/client.crt'),
+	keyFile = path.resolve(__dirname, 'ssl/client.key'),
+	caFile = path.resolve(__dirname, 'ssl/ca.cert.pem'),
+	request = require('request');
+
+
 	var http = require("http");
 	var options = {
 		// hostname: '192.168.137.3',
