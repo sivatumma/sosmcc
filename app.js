@@ -79,9 +79,11 @@ app.use(function(req, res, next) {
 function doPost(data,imei) {
 	var http = require("http");
 	var options = {
-		hostname: '192.168.137.3',
-		port: 80,
-		path: '/Service/device_post.php',
+		// hostname: '192.168.137.3',
+		hostname: 'tracker.callhealth.com',
+		// port: 80,
+		port: 443,
+		path: '/tracker/device_post.php',
 		method: 'POST',
 		headers: {
 			'Content-Type': 'application/json',
